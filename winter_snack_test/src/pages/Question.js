@@ -1,16 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ProgressBar, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { QuestionData } from '../assets/data/questiondata';
 
 const Question = () => {
+  const [questionNo, setQuestionNo] = React.useState(0);
+  const [totalScore, setTotalScore] = React.useState([
+    { id: "EI", score: 0},
+    { id: "SN", score: 0},
+    { id: "TF", score: 0},
+    { id: "JP", score: 0},
+  ])
+
+  const navigate = useNavigate();
+
+  console.log('totalScore', totalScore);
+
+  const handleClickButton = (no, type) => {
+    const newScore = totalScore.map((s) =>
+      s.id === type ? {id: s.id, score: s.score + no } : s
+    );
+
+    setTotalScore(newScore);
+    if(QuestionData.length !== questionNo + 1){
+      setQuestionNo(questionNo + 1);
+    } else{
+      navigate("/result");
+    }
+    
+  }
+
+  
     return (
         <Wrapper>
-             <ProgressBar striped variant="success" now={40} style={{ marginTop: '20px'}}/>
-             <Title>{QuestionData[0].title}</Title>
+             <ProgressBar striped variant="success" now={(questionNo/QuestionData.length)*100} style={{ marginTop: '20px'}}/>
+             <Title>{QuestionData[questionNo].title}</Title>
              <ButtonGruop>
-               <Button style={{width:"40%", minHeight: "200px", fontSize: "15pt"}}>{QuestionData[0].answera}</Button>
-               <Button style={{width:"40%", minHeight: "200px", fontSize: "15pt", marginLeft: '20px'}}>{QuestionData[0].answerb}</Button>
+               <Button onClick={()=>handleClickButton(1, QuestionData[questionNo].type)}style={{width:"40%", minHeight: "200px", fontSize: "15pt"}}>{QuestionData[questionNo].answera}</Button>
+               <Button onClick={()=>handleClickButton(0, QuestionData[questionNo].type)}style={{width:"40%", minHeight: "200px", fontSize: "15pt", marginLeft: '20px'}}>{QuestionData[questionNo].answerb}</Button>
              </ButtonGruop>
         </Wrapper>
     )
@@ -28,6 +56,7 @@ const Title = styled.div`
   text-align: center;
   font-family: "omyu pretty";
 `
+
 const ButtonGruop = styled.div`
   display: flex;
   flex-direction: row;
