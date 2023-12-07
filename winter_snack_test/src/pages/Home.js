@@ -12,7 +12,6 @@ const Home = () => {
 
   }
     return(
-        <>
         <Wrapper>
           <Header>☃겨울 간식 테스트☃</Header>
           <Contents>
@@ -25,7 +24,6 @@ const Home = () => {
              >테스트 시작하기</Button>
              </Contents>
         </Wrapper>
-        </>
     )
 }
 
