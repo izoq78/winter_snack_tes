@@ -57,7 +57,7 @@ export const QuestionData = [
     },
     {
         id: 9,
-        title: "문제1",
+        title: "문제9",
         answera: "답변1",
         answerb: "답변2",
         type: "TF",
@@ -83,4 +83,5 @@ export const QuestionData = [
         answerb: "답변2",
         type: "JP",
     }
+    
 ]
