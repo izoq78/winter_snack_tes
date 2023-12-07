@@ -1,21 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
-//import PangImage from '../assets/image/눈사람.jpg';
 import Button from 'react-bootstrap/Button';
-import { useNavigate } from 'react-router-dom';
 import { ResultData } from '../assets/data/resultdata';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 
 const Result = () => {
     const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+    const mbti = searchParams.get('mbti');
+    const [resultData, setResultData] = React.useState({});
+
+    React.useEffect(()=>{
+        const result = ResultData.find((s) => s.best === mbti);
+        setResultData(result);
+    },[mbti])
+
+    console.log(resultData);
+
     return(
         <Wrapper>
           <Header>☃겨울 간식 테스트☃</Header>
           <Contents>
              <Title>결과 보기</Title>
              <LogoImage>
-               <img src={ResultData[0].image} width={350} height={350}></img>
+               <img src={resultData.image} width={350} height={350}></img>
              </LogoImage>
-             <Dese>나와 비슷한 겨울 간식은 {ResultData[0].name} 입니다.</Dese>
+             <Dese>나와 비슷한 겨울 간식은 {resultData.name} 입니다.</Dese>
+             <Dese>{resultData.desc}</Dese>
+             <Dese>{resultData.good}</Dese>
              <Button style={{ fontFamily: "omyu pretty "}} onClick={()=>navigate("/")}
              >테스트 다시하기</Button>
              </Contents>
