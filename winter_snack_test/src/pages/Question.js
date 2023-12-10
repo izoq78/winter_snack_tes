@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.div`
-  font-size:40pt;
+  font-size:35pt;
   text-align: center;
   font-family: "omyu pretty";
 `
