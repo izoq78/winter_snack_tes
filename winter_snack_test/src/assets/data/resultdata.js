@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import 붕어빵 from '../snack/붕어빵.jpg';
+import 붕어빵 from '../snack/붕어빵.png';
 //import 붕어빵 from '../snack/붕어빵.jpg';
 //import 붕어빵 from '../snack/붕어빵.jpg';
 //import 붕어빵 from '../snack/붕어빵.jpg';
@@ -211,7 +210,7 @@ export const ResultData = [
                 만만세
             </p>
         ),
-        good: `좋아좋아: 땅콩빵  ❄  싫어싫어: 극화빵`,
+        good: `좋아좋아: 땅콩빵  ❄  싫어싫어: 국화빵`,
         image:  `${붕어빵}`,
     },
     {
