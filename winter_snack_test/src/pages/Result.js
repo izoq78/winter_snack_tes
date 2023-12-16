@@ -70,7 +70,7 @@ const Contents = styled.div`
 `
 const Title = styled.div`
   font-size: 22pt;
-  margin-top: 140px;
+  margin-top: 150px;
   font-family: "omyu pretty";
   position: relative;
   z-index: 2;

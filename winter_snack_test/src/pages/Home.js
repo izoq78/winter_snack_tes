@@ -16,7 +16,7 @@ const Home = () => {
         <Wrapper>
           <Contents>
              <Header>☃겨울 간식 테스트☃</Header>
-             <BackgroundWrapper>{}
+             <BackgroundWrapper>
                <BackgroundImageStyled src={BackgroundImage} alt="배경 이미지" />
              </BackgroundWrapper>
              <Title>나와 비슷한 겨울 간식은?</Title>
