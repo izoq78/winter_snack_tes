@@ -27,7 +27,7 @@ const Result = () => {
                 </BackgroundWrapper>
              <Title>결과 보기</Title>
              <LogoImage>
-               <img src={resultData.image} width={350} height={350}></img>
+               <img alt="결과이미지"src={resultData.image} width={350} height={350}></img>
              </LogoImage>
              <Dese>나와 비슷한 겨울 간식은 {resultData.name} 입니다.</Dese>
              <Dese2>{resultData.desc}</Dese2>
