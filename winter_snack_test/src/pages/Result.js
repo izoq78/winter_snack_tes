@@ -38,7 +38,6 @@ const Result = () => {
         </Wrapper>
     )
 }
-
 export default Result;
 
 const Wrapper = styled.div`
