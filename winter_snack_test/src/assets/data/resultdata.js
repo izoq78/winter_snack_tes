@@ -1,20 +1,20 @@
 import React from 'react';
 import 붕어빵 from '../snack/붕어빵.png';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
-//import 붕어빵 from '../snack/붕어빵.jpg';
+import 핫도그 from '../snack/핫도그.png';
+import 타코야끼 from '../snack/타코야끼.png';
+import 군고구마 from '../snack/군고구마.png';
+import 호빵 from '../snack/호빵.png';
+import 어묵 from '../snack/어묵.png';
+import 군밤 from '../snack/군밤.png';
+import 떡볶이 from '../snack/떡볶이.png';
+import 호떡 from '../snack/호떡.png';
+import 계란빵 from '../snack/계란빵.png';
+import 호두과자 from '../snack/호두과자.png';
+import 땅콩빵 from '../snack/땅콩빵.png';
+import 국화빵 from '../snack/국화빵.png';
+import 귤 from '../snack/귤.png';
+import 가래떡구이 from '../snack/가래떡구이.png';
+import 와플 from '../snack/와플.png';
 
 export const ResultData = [
     {
@@ -29,7 +29,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 붕어빵  ❄  싫어싫어: 호빵`,
-        image:  `${붕어빵}`,
+        image:  `${군밤}`,
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 호빵  ❄  싫어싫어: 붕어빵`,
-        image:  `${붕어빵}`,
+        image:  `${호두과자}`,
     },
     {
         id: 3,
@@ -57,7 +57,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 핫도그  ❄  싫어싫어: 와플`,
-        image:  `${붕어빵}`,
+        image:  `${땅콩빵}`,
     },
     {
         id: 4,
@@ -71,7 +71,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 와플  ❄  싫어싫어: 핫도그`,
-        image:  `${붕어빵}`,
+        image:  `${국화빵}`,
     },
     {
         id: 5,
@@ -85,7 +85,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 어묵  ❄  싫어싫어: 호떡`,
-        image:  `${붕어빵}`,
+        image:  `${떡볶이}`,
     },
     {
         id: 6,
@@ -100,7 +100,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 호떡  ❄  싫어싫어: 어묵`,
-        image:  `${붕어빵}`,
+        image:  `${타코야끼}`,
     },
     {
         id: 7,
@@ -115,7 +115,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 계란빵  ❄  싫어싫어: 가래떡구이`,
-        image:  `${붕어빵}`,
+        image:  `${군고구마}`,
     },
     {
         id: 8,
@@ -130,7 +130,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 가래떡구이  ❄  싫어싫어: 계란빵`,
-        image:  `${붕어빵}`,
+        image:  `${귤}`,
     },
     {
         id: 9,
@@ -145,7 +145,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 귤  ❄  싫어싫어: 군고구마`,
-        image:  `${붕어빵}`,
+        image:  `${가래떡구이}`,
     },
     {
         id: 10,
@@ -159,7 +159,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 군고구마  ❄  싫어싫어: 귤`,
-        image:  `${붕어빵}`,
+        image:  `${계란빵}`,
     },
     {
         id: 11,
@@ -174,7 +174,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 타코야끼  ❄  싫어싫어: 떡볶이`,
-        image:  `${붕어빵}`,
+        image:  `${호떡}`,
     },
     {
         id: 12,
@@ -189,7 +189,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 떡볶이  ❄  싫어싫어: 타코야끼`,
-        image:  `${붕어빵}`,
+        image:  `${어묵}`,
     },
     {
         id: 13,
@@ -204,7 +204,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 국화빵  ❄  싫어싫어: 땅콩빵`,
-        image:  `${붕어빵}`,
+        image:  `${와플}`,
     },
     {
         id: 14,
@@ -220,7 +220,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 땅콩빵  ❄  싫어싫어: 국화빵`,
-        image:  `${붕어빵}`,
+        image:  `${핫도그}`,
     },
     {
         id: 15,
@@ -235,7 +235,7 @@ export const ResultData = [
             </p>
         ),
         good: `좋아좋아: 호두과자  ❄  싫어싫어: 군밤`,
-        image:  `${붕어빵}`,
+        image:  `${호빵}`,
     },
     {
         id: 16,
