@@ -21,7 +21,7 @@ const Home = () => {
              </BackgroundWrapper>
              <Title>나와 비슷한 겨울 간식은?</Title>
              <LogoImage>
-               <img src={PangImage} width={350} height={350}></img>
+               <img alt = "메인사진"src={PangImage} width={350} height={350}></img>
              </LogoImage>
              <Dese>간식들도 성격이 있다! 나랑 비슷한 간식을 찾아보자</Dese>
              <ButtonStyled style={{ fontFamily: "omyu pretty "}} onClick={handleClickButton}
