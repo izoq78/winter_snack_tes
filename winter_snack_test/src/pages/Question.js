@@ -80,6 +80,7 @@ const Title = styled.div`
   font-family: "omyu pretty";
   position: relative;
   z-index: 2;
+  margin-top: 20px;
 `
 
 const ButtonGruop = styled.div`
