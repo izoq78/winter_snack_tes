@@ -105,11 +105,11 @@ const BackgroundWrapper = styled.div`
 const BackgroundImageStyled = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 이미지가 컨테이너에 가득 차도록 설정합니다. */
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* 배경 이미지를 가장 뒤로 이동시킵니다. */
+  z-index: -1;
   `
   const Contents = styled.div`
   position: relative;
@@ -122,7 +122,12 @@ const BackgroundImageStyled = styled.img`
   background: url(${BackgroundImage}) no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh; /* 화면 전체 높이를 차지하도록 설정합니다. */
+  height: 100vh;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
 `
 const ProgressBarStyled = styled(ProgressBar)`
   z-index: 3;
@@ -130,14 +135,14 @@ const ProgressBarStyled = styled(ProgressBar)`
   top: 0;
   left: 0;
   width: 100%;
-  height: 20px; /* 프로그래스바의 높이를 조절합니다. */
+  height: 20px;
   margin-top: 20px;
-  background-color: transparent; /* 배경을 투명하게 설정합니다. */
+  background-color: transparent;
 `;
 
 const CustomButton = styled(Button)`
   && {
-    background-color: #F08080; // 원하는 색상으로 변경하세요.
+    background-color: #F08080;
     width: 200px;
     min-height: 200px;
     font-size: 15pt;

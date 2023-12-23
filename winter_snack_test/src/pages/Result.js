@@ -64,7 +64,12 @@ const Contents = styled.div`
   background: url(${BackgroundImage}) no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh; /* 화면 전체 높이를 차지하도록 설정합니다. */
+  height: 100vh;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
   
 `
 const Title = styled.div`
@@ -96,7 +101,7 @@ margin-top: 20px;
 font-family: "omyu pretty";
 position: relative;
 z-index: 2;
-background-color: rgba(255, 255, 255, 0.5); /* 흰색 배경, 투명도 0.5 */
+background-color: rgba(255, 255, 255, 0.5);
 padding: 10px;
 `
 
@@ -112,11 +117,11 @@ const BackgroundWrapper = styled.div`
 const BackgroundImageStyled = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 이미지가 컨테이너에 가득 차도록 설정합니다. */
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0; /* 배경 이미지를 가장 뒤로 이동시킵니다. */
+  z-index: 0;
   `
 
   const ButtonStyled = styled(Button)`
