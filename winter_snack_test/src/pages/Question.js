@@ -75,7 +75,7 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.div`
-  font-size:35pt;
+  font-size:22pt;
   text-align: center;
   font-family: "omyu pretty";
   position: relative;
@@ -143,9 +143,9 @@ const ProgressBarStyled = styled(ProgressBar)`
 const CustomButton = styled(Button)`
   && {
     background-color: #F08080;
-    width: 200px;
-    min-height: 200px;
+    width: 150px;
+    min-height: 150px;
     font-size: 15pt;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 `;
