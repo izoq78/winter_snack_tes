@@ -33,8 +33,8 @@ const Result = () => {
              <Dese2>{resultData.desc}</Dese2>
              <Dese2>{resultData.good}</Dese2>
              <ButtonStyled style={{ fontFamily: "omyu pretty "}} onClick={()=>navigate("/")}
-             >테스트 다시하기</ButtonStyled>
-             </Contents>
+              >테스트 다시하기</ButtonStyled>
+          </Contents>
         </Wrapper>
     )
 }
