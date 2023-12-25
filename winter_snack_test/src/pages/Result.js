@@ -29,7 +29,11 @@ const Result = () => {
              <LogoImage>
                <img alt="결과이미지"src={resultData.image} width={350} height={350}></img>
              </LogoImage>
-             <Dese>나와 비슷한 겨울 간식은 {resultData.name} 입니다.</Dese>
+             <Dese>
+               <p style={{textAlign: 'center'}}>
+               나와 비슷한 겨울 간식은 {resultData.name} 입니다.
+               </p>
+             </Dese>
              <Dese2>{resultData.desc}</Dese2>
              <Dese2>{resultData.good}</Dese2>
              <ButtonStyled style={{ fontFamily: "omyu pretty "}} onClick={()=>navigate("/")}
@@ -87,7 +91,7 @@ z-index: 2;
 `
 
 const Dese = styled.div`
-font-size: 20pt;
+font-size: 19pt;
 margin-top: 20px;
 font-family: "omyu pretty";
 position: relative;
